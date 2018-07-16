@@ -36,4 +36,4 @@ names(subset_combined) <- gsub("\\-",".",names(subset_combined))
 
 # Group by factor variables subject id and activity. Calculate mean of each group. Write tidy data as .csv file
 tidyData <- subset_combined %>% group_by(SubjectID,ActivityLabel) %>% summarize_all(mean)
-write.csv(tidyData,"tidyData.csv", row.names=FALSE)
+write.table(tidyData,"tidyData.txt", row.names=FALSE)
