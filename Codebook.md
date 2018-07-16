@@ -17,10 +17,11 @@ Sensor signals were collected from a group of 30 volunteers performing six activ
 **Overview of Tidy Data**
 
 *Variables in the Tidy Data Set*
+The data set has 180 values (rows) corresponding to 30 subjects and 6 activities. It has 2 factor variables and 81 numeric variables.
 
 The first two columns contain the factor variables ‘Subject ID’ and ‘ActivityLabel’. The SubjectID range is from 1 to 30. The ActivityLabel is a factor with 6 levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
-Naming of the numeric variables was performed by appending together the following components (separated by ‘.’):
+The rest of the columns contain the 81 numeric variables. Naming of the numeric variables was performed by appending together the following components (separated by ‘.’):
 - prefix ’t’ or ‘f to indicate time or frequency domain signal, respectively
 - the name of the raw signal (for e.g. BodyGyroJerk)
 - the estimated value (for e.g. ‘std’ for standard deviation)
