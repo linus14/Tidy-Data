@@ -2,7 +2,7 @@
 
 The code to create the tidy data set is called 'run_analysis.R'.
 
-The tidy data set is called 'tidyData.csv'. It contains 81 numeric variables and 2 factor variables (SubjectID and ActivityLabel). The number of values (rows) is 180 corresponding to 30 subjects and 6 activities.
+The tidy data set is called 'tidyData.txt'. It contains 81 numeric variables and 2 factor variables (SubjectID and ActivityLabel). The number of values (rows) is 180 corresponding to 30 subjects and 6 activities.
 
 The code to generate the tidy data set uses the 'dplyr' and 'data.table' packages. 
 
