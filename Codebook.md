@@ -16,16 +16,6 @@ Sensor signals were collected from a group of 30 volunteers performing six activ
 
 **Overview of Tidy Data**
 
-The following steps were taken to create the tidy data set:
-- Data was read from the text files containing the subject ID, activity code, and the 561 variables. They were stored in 3 different data frames (3 each for test and training sets).
-- The 3 data frames were combined using column binding. This was done for both the training data and test data.
-- Training and test data frames were then combined using row binding.
-- Variable names for the combined dataset were created by reading and storing the contents of ‘features.txt’.
-- The variables containing ‘mean’ or ‘std’ in their names were extracted and stored in a new data frame.
-- The activity and subject ID variables of the newly created data frame were converted to the ‘factor’ class
-- The data frame was grouped by subject ID and activity. The mean of each group was calculated and stored in a new data frame
-- This final data frame with 180 means (corresponding to 30 subjects and 6 activities) was written out as a .csv file. The tidy data contains 2 factor variables and 81 numeric variables.
-
 *Variables in the Tidy Data Set*
 
 The first two columns contain the factor variables ‘Subject ID’ and ‘ActivityLabel’. The SubjectID range is from 1 to 30. The ActivityLabel is a factor with 6 levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
