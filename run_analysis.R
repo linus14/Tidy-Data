@@ -2,15 +2,15 @@ library(data.table)
 library(dplyr)
 
 # Read the data from y_train.txt, subject_train.txt, and X_train.txt. Combine into one data frame
-act_train <- read.table("train/y_train.txt")
-sub_train <- read.table("train/subject_train.txt")
-train <- fread("train/X_train.txt")
+act_train <- read.table("y_train.txt")
+sub_train <- read.table("subject_train.txt")
+train <- fread("X_train.txt")
 train <- cbind(sub_train, act_train, train)
 
 # Read the data from y_test.txt, subject_test.txt, and X_test.txt. Combine into one data frame
-act_test <- read.table("test/y_test.txt")
-sub_test <- read.table("test/subject_test.txt")
-test <- fread("test/X_test.txt")
+act_test <- read.table("y_test.txt")
+sub_test <- read.table("subject_test.txt")
+test <- fread("X_test.txt")
 test <- cbind(sub_test, act_test, test)
 
 # Merge training and test datasets
